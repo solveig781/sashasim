@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "pages/**/*.js": {
+      "memory": 128,
+      "maxDuration": 5
+    }
+  },
+  "github": {
+    "silent": true
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/",
+      "headers": {
+        "cache-control": "max-age=604800, immutable"
+      }
+    }
+  ]
+}
