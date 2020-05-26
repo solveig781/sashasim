@@ -10,10 +10,14 @@ const GlobalStyling = createGlobalStyle`
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+
+    display: flex;
   }
 
   body {
     width: 100%;
+    display: flex;
+    
     margin: 0;
     padding: 0;
     overflow: auto;
@@ -23,6 +27,12 @@ const GlobalStyling = createGlobalStyle`
     background: white;
     font-family: 'Comfortaa', sans-serif;
   }
+
+  html, body, main, #__next {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
 `;
 
 function AppWrapper({ Component, pageProps, user }) {
