@@ -64,8 +64,8 @@ export default class DefaultDocument extends Document {
   }
 
   render() {
-    const pageTitle = 'Aleksandra Sokolova';
-    const pageDescription = 'Homepage and portfolio of Aleksandra Sokolova.';
+    const pageTitle = 'Buhaem';
+    const pageDescription = 'Sound On';
 
     const { hostName } = this.props;
 
@@ -83,7 +83,7 @@ export default class DefaultDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:title" content={pageTitle} />
           <meta property="og:description" content={pageDescription} />
-          <meta property="og:image" content={`${hostName}thumbnail.png`} />
+          <meta property="og:image" content={`${hostName}thumbnail.jpg`} />
           <meta name="twitter:card" content="summary_large_image" />
           {/* For humans */}
           <link type="text/plain" rel="author" href="/humans.txt" />
