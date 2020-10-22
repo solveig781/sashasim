@@ -27,12 +27,14 @@ const PurpleCircleContainer = styled(Col)`
   min-height: 607px;
   border-radius: 50%;
   background: #5a1f6f;
+  box-shadow: 0px 7px 30px rgba(90, 31, 111, 0.5);
   position: absolute;
   top: -35%;
   left: -25%;
 
   &:hover {
     background: #07bad2;
+    box-shadow: 0px 7px 30px rgba(7, 186, 210, 0.3);
   }
 `;
 
@@ -45,6 +47,7 @@ const WhiteCircleContainer = styled(Col)`
   position: absolute;
   top: -16%;
   right: -8%;
+  box-shadow: 0px 7px 30px rgba(63, 163, 163, 0.1);
 
   &:hover {
     top: -10%;
@@ -84,6 +87,7 @@ const GreenCircleContainer = styled(Col)`
   min-height: 66px;
   border-radius: 50%;
   background: #129436;
+  box-shadow: 0px 7px 30px rgba(27, 163, 15, 0.3);
 
   &:hover {
     transform: scale(1.2, 1.2);
@@ -128,7 +132,7 @@ const PicContainer = styled(Col)`
   background: #e07373;
   overflow: hidden;
   border: 2px solid grey;
-  box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 8px 30px rgba(0, 0, 0, 0.2);
 
   img {
     width: 210px;
@@ -138,6 +142,8 @@ const PicContainer = styled(Col)`
 const MyButton = styled(Button)`
   border-bottom: none;
   padding: 0;
+  justify-content: center;
+  margin-left: 5px;
 
   img {
     max-width: 60px;
@@ -154,24 +160,6 @@ const MyButton = styled(Button)`
 const Audios = [
   //
   '/Aspirin.mp3',
-{/* }
-  '/Adventures.mp3',
-  '/Breakfast.mp3',
-  '/Eagle.mp3',
-  '/ShitHappens.mp3',
-  '/HeyGirl.mp3',
-  '/Hug.mp3',
-  '/ILoveYou.mp3',
-  '/Kamazhay.mp3',
-  '/Kolbaski.mp3',
-  '/Music.mp3',
-  '/NaebniVodki.mp3',
-  '/RedDress.mp3',
-  '/SherlockKeks.mp3',
-  '/Sing.mp3',
-  '/TheDarkestHour.mp3',
-  '/Traktuy.mp3',
-  */
 ];
 
 let currentAudio = null;
@@ -195,7 +183,7 @@ function Index() {
           <img src="/SashaPic.png" alt="Тут должна быть моя рожа" />
         </PicContainer>
         <MyButton onClick={RandomAudio}>
-          <img src="/speaker.png" />
+          <img src="/sound-on.png" />
         </MyButton>
       </CenterContainer>
 
