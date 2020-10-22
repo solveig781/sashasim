@@ -154,6 +154,7 @@ const MyButton = styled(Button)`
 const Audios = [
   //
   '/Aspirin.mp3',
+{/* }
   '/Adventures.mp3',
   '/Breakfast.mp3',
   '/Eagle.mp3',
@@ -170,6 +171,7 @@ const Audios = [
   '/Sing.mp3',
   '/TheDarkestHour.mp3',
   '/Traktuy.mp3',
+  */
 ];
 
 let currentAudio = null;
